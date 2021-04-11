@@ -153,7 +153,7 @@ function find_exe() {
 }
 
 function find_python_lib() {
-        python2 -c "import $1" &> /dev/null && echo "$1" || not_found
+        python -c "import $1" &> /dev/null && echo "$1" || not_found
 }
 
 function find_lib() {
